@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- *********** -->
+<!-- CSS Section -->
+<!-- *********** -->
+
+
+
+<title> My Database </title>
+    
+</head>
+
+<body>
+
+    <form action="/contacts" method="POST">
+        <label>Name: </label>
+        <input id="nameId" type="text" placeholder="name" name="name" />
+        <label>Message: </label>
+        <input id="messageId" type="text" placeholder="message" name="message" />
+        <button type="submit">Submit</button>
+        
+    </form>
+    <button id="update-button">Update</button>
+    <button id="delete-all-button">Clear</button>
+    <button id="delete-one-button">Delete One</button>
+    <h2> Contacts </h2>
+
+    <ul class="contacts">
+      <!-- Loop through message -->
+      <% for(var i = 0; i < contacts.length; i++) {%>
+        <li class="contacts">
+          <!-- Output name from the iterated message object -->
+          <span><%= contacts[i].name %></span>:
+          <!-- Output message from the iterated message object -->
+          <span><%= contacts[i].message %></span>
+        </li>
+      <% } %>
+    </ul>
+
+<!-- *********** -->
+<!-- JavaScript Section -->
+<!-- *********** -->
+
+<script src="./server.js"></script>
+<script src="/public/main.js"></script>
+<script src="/main.js"></script>
+
+
+<!-- *********** -->
+<!-- 3rd Party JavaScript Libraries -->
+<!-- *********** -->
+
+
+<!-- *********** -->
+<!-- App Scripts -->
+<!-- *********** -->
+    
+</body>
+
+<footer>
+
+
+</footer>
+
+</html>

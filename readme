@@ -1,0 +1,17 @@
+npm init 
+- npm init creates a package.json file which helps you manage dependencies (which we will install as we go through the tutorial).
+
+npm install express --save
+- The --save flag saves express as a dependency in package.json. It’s important to know these dependencies because npm can retrieve dependencies with another npm install command when you need it later.
+
+npm install nodemon --save-dev
+- Nodemon restarts the server automatically when you save a file that’s used by the server.js. We can install Nodemon with the following command
+
+npm install body-parser --save
+- Body-parser is a middleware. They help to tidy up the request object before we use them. Express lets us use middleware with the use method
+
+npm install mongodb --save
+-once installed, we can connect to MongoDB through the MongoClient’s connect method
+
+npm install ejs --save
+- add dynamic content to an HTML file.
